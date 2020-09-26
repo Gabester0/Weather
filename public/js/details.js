@@ -30,7 +30,7 @@ weatherForm.addEventListener('submit', (e)=>{
     eleven.textContent = ``
     twelve.textContent = ``
 
-    fetch(`http://localhost:3000/weather?address=${location}&forcast_days=1&hourly=1`).then( (response)=>{
+    fetch(`/weather?address=${location}&forcast_days=1&hourly=1`).then( (response)=>{
         response.json().then( (data)=>{
             if(data.error) return messageOne.textContent = data.error
             zero.textContent = `Readings taken at: ${data.body.obsevation_time}`;
