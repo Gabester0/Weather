@@ -1,0 +1,106 @@
+body {
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16 px;
+    text-align: center;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    border-bottom: 1px solid #eeeeee;
+}
+
+header li {
+    padding-bottom: 16px;
+    margin-right: 32px;
+}
+
+header li a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+header li a:hover {
+    color: #333333;
+}
+
+.main-content {
+    flex-grow: 1;
+    margin: auto;
+}
+
+.main-content p {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.display-block {
+    display: block;
+    width: 50px;
+    margin: 25px auto 10px auto;
+}
+
+.display-none {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+ul li {
+    text-align: center;
+}
+
+.portrait {
+    display: block;
+    width: 250px;
+    margin: auto;
+}
+
+input{
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
+
+footer {
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
