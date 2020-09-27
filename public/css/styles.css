@@ -79,6 +79,11 @@ ul li {
     text-align: center;
 }
 
+sup {
+    font-size: 11px;
+    font-family: initial;
+}
+
 .portrait {
     display: block;
     width: 250px;

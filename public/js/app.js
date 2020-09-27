@@ -15,14 +15,10 @@ weatherForm.addEventListener(`submit`, (e)=>{
         response.json().then( (data)=>{
             if(data.error) return messageOne.textContent = data.error;
             console.log(data.body)
-            // let icon = document.createElement(`img`);
             icon.setAttribute(`src`, data.body.weather_icons[0]);
             icon.classList = `display-block`;
-            // icon.setAttribute(`alt`, `Weather Icon`);
-            // icon.setAttribute(`id`, `icon`)
-            // document.getElementById(`results`).prepend(icon)
             messageOne.textContent = data.location;
-            messageTwo.textContent = data.forecast;
+            messageTwo.innerHTML = data.forecast;
         })
     })
 })

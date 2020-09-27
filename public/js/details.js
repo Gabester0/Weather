@@ -35,17 +35,17 @@ weatherForm.addEventListener('submit', (e)=>{
             if(data.error) return messageOne.textContent = data.error
             zero.textContent = `Readings taken at: ${data.body.obsevation_time}`;
             one.textContent = `Daylight: ${data.body.is_day}`;
-            two.textContent = `Cloud Cover: ${data.body.cloudcover}`;
-            three.textContent = `Temp Feels Like: ${data.body.feelslike}`;
-            four.textContent = `Humidity: ${data.body.humidity}`;
-            five.textContent = `Precipitation: ${data.body.precip}`;
-            six.textContent = `Pressure: ${data.body.pressure}`;
-            seven.textContent = `Temperature: ${data.body.temperature}`;
+            two.textContent = `Cloud Cover: ${data.body.cloudcover}%`;
+            three.innerHTML = `Temp Feels Like: ${data.body.feelslike}°<sup>F</sup>`;
+            four.textContent = `Humidity: ${data.body.humidity}%`;
+            five.textContent = `Precipitation: ${data.body.precip}%`;
+            six.textContent = `Pressure: ${data.body.pressure} in`;
+            seven.innerHTML = `Temperature: ${data.body.temperature}°<sup>F</sup>`;
             eight.textContent = `UV Index: ${data.body.uv_index}`;
-            nine.textContent = `Visibility: ${data.body.visibility}`;
-            ten.textContent = `Wind Degree: ${data.body.wind_degree}`;
+            nine.textContent = `Visibility: ${data.body.visibility} miles`;
+            ten.textContent = `Wind Degree: ${data.body.wind_degree}°`;
             eleven.textContent = `Wind Direction: ${data.body.wind_dir}`;
-            twelve.textContent = `Wind Speed: ${data.body.wind_speed}`;
+            twelve.textContent = `Wind Speed: ${data.body.wind_speed} mph`;
         })
     })
 })
