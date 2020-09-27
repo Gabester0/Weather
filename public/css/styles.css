@@ -87,7 +87,8 @@ sup {
 .portrait {
     display: block;
     width: 250px;
-    margin: auto;
+    margin: 50px auto;
+    border-radius: 50%;
 }
 
 input{

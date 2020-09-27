@@ -14,7 +14,7 @@ weatherForm.addEventListener(`submit`, (e)=>{
     fetch(`/weather?address=${location}`).then( (response)=>{
         response.json().then( (data)=>{
             if(data.error) return messageOne.textContent = data.error;
-            console.log(data.body)
+            console.log(data.body);
             icon.setAttribute(`src`, data.body.weather_icons[0]);
             icon.classList = `display-block`;
             messageOne.textContent = data.location;
