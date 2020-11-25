@@ -13,7 +13,9 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "hbs": "^4.1.1",
-    "postman-request": "^2.88.1-postman.25"
+    "jest": "^26.6.3",
+    "postman-request": "^2.88.1-postman.25",
+    "supertest": "^6.0.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
